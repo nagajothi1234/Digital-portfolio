@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #1E1E2E;
+            color: white;
+        }
+        header {
+            background: #FFFDD0;
+            color: black;
+            padding: 15px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .header-container {
+            display: inline-flex;
+            align-items: center;
+            background: white;
+            padding: 16%;
+            border-radius: 0px;
+        }
+        .profile-img {
+            width: 100px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+        nav {
+            background: #353547;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #72B6C9;
+            text-decoration: none;
+        }
+        section {
+            padding: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .about-container, .project, .contact-container {
+            background: #2A2A3A;
+            padding: 20px;
+            margin: 20px auto;
+            width: 50%;
+            border-radius: 10px;
+            color: #72B6C9;
+        }
+        .contact-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-container input, .contact-container textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        .contact-container button {
+            background-color: #72B6C9;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background: #1E1E2E;
+            color: white;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="naga.jpg" alt="Your Photo" class="profile-img">
+            <h1>Nagajothi</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="Resume.pdf" class="btn-resume" download>Download Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <p>I am a Computer Science student with a passion for coding and problem-solving. In addition to programming, I enjoy drawing and expressing creativity through art. My goal is to blend technology and design to create innovative solutions.</p>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Toy Shop🔫</h3>
+            <p>Created a responsive website for a toy shop using HTML and CSS.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Nagajothi @</p>
+    </footer>
+</body>
+</html>

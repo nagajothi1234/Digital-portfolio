@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Shop</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Featured Toys Section */
+        #featured {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .toy-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .toy-card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .toy-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Categories Section */
+        #categories {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .category-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .category-card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .category-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* About Us Section */
+        #about {
+            padding: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 20px;
+            text-align: center;
+        }
+
+        #contact ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #contact ul li {
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Toy Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#featured">Featured Toys</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="featured">
+        <h2>Featured Toys</h2>
+        <div class="toy-grid">
+            <div class="toy-card">
+                <img src="Buzz light.png" alt="Toy 1">
+                <h3>Buzz Light</h3>
+                <p>$32.99</p>
+            </div>
+            <div class="toy-card">
+                <img src="woody.jpeg" alt="Toy 2">
+                <h3>Woody</h3>
+                <p>$45.99</p>
+            </div>
+            <div class="toy-card">
+                <img src="jessi.png" alt="Toy 3">
+                <h3>Jessi</h3>
+                <p>$29.99</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories">
+        <h2>Categories</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="uchika.jpeg" alt="Category 1">
+                <h3>Action Figures</h3>
+            </div>
+            <div class="category-card">
+                <img src="game.jpeg" alt="Category 2">
+                <h3>Board Games</h3>
+            </div>
+            <div class="category-card">
+                <img src="baby.jpeg" alt="Category 3">
+                <h3>Dolls</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a family-owned toy shop dedicated to bringing joy to children and families. Our mission is to provide high-quality, safe, and fun toys for kids of all ages.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us:</p>
+        <ul>
+            <li>Email: toyshop@gmail.com</li>
+            <li>Phone: (+91)9878675666</li>
+            <li>Address: 123 Toy Street, Fun City, FC 12345</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Toy Shop🔫. All rights reserved.</p>
+    </footer>
+</body>
+</html>
